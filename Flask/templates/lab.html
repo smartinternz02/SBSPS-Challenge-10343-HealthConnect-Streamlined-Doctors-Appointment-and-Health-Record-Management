@@ -1,0 +1,61 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add a new section for Laboratory Services below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn More About Laboratory Services</h3>
+                    <p>Discover our state-of-the-art Laboratory Services designed to provide accurate and essential diagnostic testing for a wide range of medical conditions. Our dedicated team of laboratory professionals and advanced equipment ensure reliable and precise results.</p>
+                    <p><strong>Key Features of Our Laboratory Services</strong>:</p>
+                    <ul>
+                        <li><strong>Comprehensive Diagnostic Testing:</strong> We offer a comprehensive range of diagnostic tests, including blood tests, imaging, pathology, and more.</li>
+                        <li><strong>Advanced Laboratory Equipment:</strong> Our laboratory is equipped with advanced technology to ensure accurate and timely test results.</li>
+                        <li><strong>Experienced Lab Technicians:</strong> Our team of experienced lab technicians and scientists are committed to delivering high-quality testing services.</li>
+                        <li><strong>Fast and Accurate Results:</strong> We prioritize efficiency, providing fast and accurate test results to aid in medical diagnoses and treatment.</li>
+                    </ul>
+                    <p><strong>Benefits of Our Laboratory Services</strong>:</p>
+                    <ul>
+                        <li><strong>Precise Diagnoses:</strong> Our advanced laboratory technology and experienced staff contribute to precise diagnoses, allowing for appropriate medical treatment.</li>
+                        <li><strong>Timely Results:</strong> Fast and accurate test results help healthcare providers make informed decisions quickly.</li>
+                        <li><strong>Convenient Access:</strong> We offer convenient access to a wide range of diagnostic tests, making it easier for patients to get the tests they need.</li>
+                    </ul>
+                    <p><strong>Learn More and Schedule Lab Tests</strong>: If you'd like to learn more about our Laboratory Services or schedule diagnostic tests, please feel free to contact us. We are here to provide you with accurate and essential diagnostic testing services.</p>
+                    <a href="{{url_for('appointment1')}}" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

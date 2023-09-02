@@ -1,0 +1,63 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+
+
+<!-- Add a new section for X-ray Services below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn More About X-ray Services</h3>
+                    <p>Discover our state-of-the-art X-ray services that are designed to provide accurate and vital medical imaging. Whether for diagnostics, monitoring, or treatment planning, our X-ray services are at the forefront of modern healthcare technology.</p>
+                    <p><strong>Key Features of Our X-ray Services</strong>:</p>
+                    <ul>
+                        <li><strong>Advanced Imaging Technology:</strong> Our X-ray services utilize the latest imaging technology to ensure precise and detailed results for medical professionals.</li>
+                        <li><strong>Rapid Results:</strong> We prioritize efficiency, providing fast and reliable X-ray results to aid in timely diagnosis and treatment.</li>
+                        <li><strong>Experienced Radiologists:</strong> Our team of experienced radiologists ensures accurate interpretation of X-ray images, contributing to better patient care.</li>
+                        <li><strong>Patient Comfort:</strong> We understand that undergoing an X-ray can be stressful. Our facilities are designed with patient comfort in mind to minimize anxiety during the procedure.</li>
+                    </ul>
+                    <p><strong>Benefits of Our X-ray Services</strong>:</p>
+                    <ul>
+                        <li><strong>Precise Diagnostics:</strong> Our advanced X-ray technology aids in accurate diagnosis, ensuring that patients receive the right treatment.</li>
+                        <li><strong>Efficient Healthcare:</strong> Rapid results and efficient processes contribute to streamlined healthcare services.</li>
+                        <li><strong>Enhanced Patient Care:</strong> Our commitment to patient comfort and experienced radiologists ensures a positive experience for patients.</li>
+                    </ul>
+                    <p><strong>Learn More and Schedule an X-ray</strong>: If you'd like to learn more about our X-ray services or schedule an appointment, please feel free to contact us. We're here to provide you with the highest quality medical imaging services.</p>
+                    <a href="{{url_for('appointment1')}}" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

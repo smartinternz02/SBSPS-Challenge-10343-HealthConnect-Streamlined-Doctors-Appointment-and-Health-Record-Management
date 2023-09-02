@@ -1,0 +1,61 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add a new section for Outpatient Department (OPD) Services below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn More About Outpatient Department (OPD) Services</h3>
+                    <p>Discover our comprehensive Outpatient Department (OPD) Services designed to provide accessible and high-quality healthcare for your non-emergency medical needs. Our OPD is equipped with experienced healthcare professionals and a wide range of medical services to ensure your well-being.</p>
+                    <p><strong>Key Features of Our OPD Services</strong>:</p>
+                    <ul>
+                        <li><strong>Medical Consultations:</strong> Our OPD offers consultations with skilled physicians and specialists to address your medical concerns and provide treatment plans.</li>
+                        <li><strong>Diagnostic Services:</strong> Access a variety of diagnostic tests and screenings, including laboratory tests, radiology, and imaging services.</li>
+                        <li><strong>Specialized Clinics:</strong> We host specialized clinics to cater to specific healthcare needs, such as cardiology, dermatology, and more.</li>
+                        <li><strong>Timely Appointments:</strong> We prioritize scheduling appointments to minimize waiting times and ensure efficient healthcare delivery.</li>
+                    </ul>
+                    <p><strong>Benefits of Our OPD Services</strong>:</p>
+                    <ul>
+                        <li><strong>Accessible Healthcare:</strong> Our OPD services are designed to provide accessible healthcare for non-emergency cases, ensuring you receive timely medical attention.</li>
+                        <li><strong>Expert Care:</strong> Our healthcare professionals are dedicated to delivering expert care and treatment for a wide range of medical conditions.</li>
+                        <li><strong>Efficient Diagnostics:</strong> Access to diagnostic services within the same facility allows for timely and accurate diagnoses.</li>
+                    </ul>
+                    <p><strong>Learn More and Schedule an OPD Appointment</strong>: If you'd like to learn more about our Outpatient Department (OPD) Services or schedule an appointment, please feel free to contact us. We are here to provide you with accessible and high-quality healthcare services.</p>
+                    <a href="{{url_for('appointment1')}}" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

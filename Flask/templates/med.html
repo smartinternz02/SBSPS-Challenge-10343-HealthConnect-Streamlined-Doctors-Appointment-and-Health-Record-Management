@@ -1,0 +1,60 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add a new section for Medical Insurance Services below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn More About Medical Insurance Services</h3>
+                    <p>Explore our comprehensive Medical Insurance Services designed to provide peace of mind and financial security for your healthcare needs. We offer a range of insurance plans to ensure that you and your family have access to quality medical care without the burden of high medical expenses.</p>
+                    <p><strong>Key Features of Our Medical Insurance Services</strong>:</p>
+                    <ul>
+                        <li><strong>Insurance Plans:</strong> We offer a variety of insurance plans to cater to different healthcare needs, including individual and family plans.</li>
+                        <li><strong>Coverage:</strong> Our insurance plans cover a wide range of medical services, including hospital stays, doctor visits, surgeries, and more.</li>
+                        <li><strong>Network Providers:</strong> We have a network of healthcare providers to ensure that you have access to quality healthcare services.</li>
+                        <li><strong>Claims Process:</strong> Our claims process is streamlined to make it easy for you to get reimbursed for covered medical expenses.</li>
+                    </ul>
+                    <p><strong>Benefits of Our Medical Insurance Services</strong>:</p>
+                    <ul>
+                        <li><strong>Financial Security:</strong> Our insurance plans provide financial security by covering medical expenses, reducing your out-of-pocket costs.</li>
+                        <li><strong>Choice of Providers:</strong> You have the flexibility to choose from a network of healthcare providers to receive the care you need.</li>
+                        <li><strong>Peace of Mind:</strong> With medical insurance, you can have peace of mind knowing that your healthcare needs are covered.</li>
+                    </ul>
+                    <p><strong>Learn More and Get Insured</strong>: If you'd like to learn more about our Medical Insurance Services or get insured, please feel free to contact us. We are here to provide you with the peace of mind and financial security you need for your healthcare.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

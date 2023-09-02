@@ -1,0 +1,61 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add a new section for Employee Health Scheme below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn About Our Employee Health Scheme</h3>
+                    <p>At [Your Healthcare Provider Name], we care about the health and well-being of your employees. Our Employee Health Scheme is designed to provide comprehensive healthcare coverage to your workforce, ensuring that they stay healthy and productive.</p>
+                    <p><strong>Key Features of Our Employee Health Scheme</strong>:</p>
+                    <ul>
+                        <li><strong>Customizable Plans:</strong> Tailor the health scheme to fit the specific needs and budget of your organization and employees.</li>
+                        <li><strong>Comprehensive Coverage:</strong> Our scheme covers a wide range of medical services, including preventive care, consultations, diagnostic tests, and more.</li>
+                        <li><strong>Employee Wellness Programs:</strong> We offer wellness programs to promote a healthy lifestyle among your employees, reducing absenteeism and healthcare costs.</li>
+                        <li><strong>Dedicated Support:</strong> Our team provides dedicated support to assist your employees with healthcare-related queries and appointments.</li>
+                    </ul>
+                    <p><strong>Benefits of Our Employee Health Scheme</strong>:</p>
+                    <ul>
+                        <li><strong>Healthy and Productive Workforce:</strong> Investing in employee health leads to a more productive and engaged workforce.</li>
+                        <li><strong>Reduced Healthcare Costs:</strong> Preventive care and early intervention can help reduce long-term healthcare expenses.</li>
+                        <li><strong>Employee Satisfaction:</strong> Providing healthcare benefits enhances job satisfaction and employee retention.</li>
+                        <li><strong>Customized Solutions:</strong> We work with you to create a scheme that meets the unique needs of your organization.</li>
+                    </ul>
+                    <p><strong>Learn More and Enroll Your Employees</strong>: To learn more about our Employee Health Scheme and enroll your employees, please contact our dedicated team. We are here to support the health and well-being of your workforce.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

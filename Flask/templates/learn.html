@@ -1,0 +1,64 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add this section below your header -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn More About Our Project: IBM Health Connect - Bridging Healthcare for a Healthier World</h3>
+                    <p>Welcome to IBM Health Connect, an ambitious project that aspires to transform the healthcare landscape by harnessing the power of technology and connectivity. In a world where healthcare is more critical than ever, we are committed to creating a seamless and patient-centric healthcare ecosystem that bridges gaps, fosters collaboration, and ultimately promotes a healthier world for all.</p>
+                    <p><strong>Our Vision and Mission</strong>: At the heart of IBM Health Connect is a vision for a healthcare system that transcends boundaries, ensuring that every individual has access to quality care. Our mission is to facilitate this vision by developing a comprehensive healthcare platform that integrates various aspects of healthcare, from patient care to research collaboration.</p>
+                    <p><strong>Key Features</strong>:</p>
+                    <ul>
+                        <li><strong>Interoperable Healthcare Data:</strong> Our platform prioritizes the sharing of healthcare data, creating standardized protocols that allow for the smooth and secure exchange of patient information between healthcare providers, hospitals, and research institutions. This promotes data-driven decision-making and enhances the quality of patient care.</li>
+                        <li><strong>Telemedicine Solutions:</strong> Recognizing the need for accessibility and convenience, we are developing cutting-edge telemedicine solutions. These solutions empower patients to connect with healthcare professionals remotely, enabling consultations, diagnosis, and treatment from the comfort of their homes.</li>
+                        <li><strong>Patient-Centered Care:</strong> Our commitment to patient-centric care means that patients can access their health records, schedule appointments, and receive personalized health recommendations through a user-friendly interface. We believe in putting patients in control of their healthcare journey.</li>
+                        <li><strong>Research Collaboration:</strong> IBM Health Connect serves as a hub for healthcare researchers worldwide. By providing access to anonymized patient data (with patient consent), we aim to expedite medical breakthroughs and advancements. Collaboration among researchers is at the heart of our platform.</li>
+                        <li><strong>AI and Predictive Analytics:</strong> Leveraging IBM's renowned AI capabilities, our platform offers predictive analytics for disease prevention, early diagnosis, and treatment optimization. This empowers healthcare providers to make informed decisions that lead to better patient outcomes.</li>
+                    </ul>
+                    <p><strong>Benefits</strong>:</p>
+                    <ul>
+                        <li><strong>Improved Patient Care:</strong> Patients will experience a more efficient and personalized healthcare experience, resulting in better health outcomes.</li>
+                        <li><strong>Efficient Healthcare Systems:</strong> Healthcare providers will benefit from streamlined operations, reduced administrative burden, and enhanced decision support tools.</li>
+                        <li><strong>Research Advancements:</strong> With access to a vast dataset for studies, researchers can accelerate medical breakthroughs and contribute to the advancement of healthcare knowledge.</li>
+                    </ul>
+                    <p><strong>Join Us in Building a Healthier World</strong>: IBM Health Connect invites you to join us on this transformative journey. As we work towards creating a healthier world, your support and collaboration are invaluable. Together, we can bridge the gaps in healthcare, improve patient experiences, and drive medical research forward. Learn more about our project and be a part of this meaningful endeavor to transform healthcare for the better.</p>
+                    <a href="{{url_for('appointment1')}}" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

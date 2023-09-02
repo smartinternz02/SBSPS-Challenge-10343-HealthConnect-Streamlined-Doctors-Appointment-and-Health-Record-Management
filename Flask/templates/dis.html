@@ -1,0 +1,60 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add a new section for Discounts and Offers below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Discover Our Latest Discounts and Offers</h3>
+                    <p>At [Your Healthcare Provider Name], we believe in making quality healthcare affordable. Explore our latest discounts and offers that allow you to access top-notch medical services at reduced prices. We are committed to providing value for our patients.</p>
+                    <p><strong>Current Discounts and Offers</strong>:</p>
+                    <ul>
+                        <li><strong>Seasonal Promotions:</strong> Check out our seasonal promotions, including special offers during holidays and health awareness months.</li>
+                        <li><strong>Membership Discounts:</strong> Become a member and enjoy exclusive discounts on various medical services and treatments.</li>
+                        <li><strong>Family Packages:</strong> Save on healthcare expenses with our family packages, designed to cover the healthcare needs of your entire family.</li>
+                        <li><strong>Senior Citizen Discounts:</strong> We offer discounts for senior citizens to ensure they receive quality healthcare without financial strain.</li>
+                    </ul>
+                    <p><strong>Benefits of Our Discounts and Offers</strong>:</p>
+                    <ul>
+                        <li><strong>Affordable Healthcare:</strong> Our discounts and offers make high-quality healthcare accessible and affordable for all.</li>
+                        <li><strong>Value for Money:</strong> You can enjoy excellent medical services while saving on expenses.</li>
+                        <li><strong>Healthcare Packages:</strong> Our packages provide comprehensive coverage for various healthcare needs.</li>
+                    </ul>
+                    <p><strong>Stay Informed and Save on Healthcare</strong>: To stay informed about our latest discounts and offers or to take advantage of these savings, please visit our website regularly or contact us for more details. We are dedicated to helping you save on healthcare costs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

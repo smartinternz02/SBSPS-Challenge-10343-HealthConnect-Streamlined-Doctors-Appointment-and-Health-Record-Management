@@ -1,0 +1,61 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add a new section for Accommodation Services below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn More About Accommodation Services</h3>
+                    <p>Discover our comfortable and convenient Accommodation Services designed to provide a restful and supportive environment for patients and their families. We prioritize your comfort and well-being during your stay with us.</p>
+                    <p><strong>Key Features of Our Accommodation Services</strong>:</p>
+                    <ul>
+                        <li><strong>Comfortable Rooms:</strong> Our accommodation facilities offer comfortable and well-furnished rooms to ensure a relaxing stay.</li>
+                        <li><strong>Family-Friendly Environment:</strong> We understand the importance of family support. Our accommodations are designed to accommodate family members comfortably.</li>
+                        <li><strong>Amenities:</strong> Enjoy access to amenities such as Wi-Fi, TV, and room service for a pleasant and convenient stay.</li>
+                        <li><strong>Security and Safety:</strong> We prioritize the security and safety of our guests to provide peace of mind during your stay.</li>
+                    </ul>
+                    <p><strong>Benefits of Our Accommodation Services</strong>:</p>
+                    <ul>
+                        <li><strong>Restful Environment:</strong> Our accommodations provide a peaceful and restful environment to support your recovery and well-being.</li>
+                        <li><strong>Family Support:</strong> We encourage family involvement in patient care by providing family-friendly accommodations.</li>
+                        <li><strong>Convenience:</strong> Enjoy convenient access to amenities and services during your stay.</li>
+                    </ul>
+                    <p><strong>Learn More and Book Accommodation</strong>: If you'd like to learn more about our Accommodation Services or book a comfortable stay with us, please feel free to contact us. We are here to provide you with a restful and supportive environment during your time with us.</p>
+                    <a href="{{url_for('appointment1')}}" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

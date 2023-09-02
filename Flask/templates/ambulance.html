@@ -1,0 +1,61 @@
+<head>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+	<header class="header_wrapper">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-stream navbar-toggler-icon"></i>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav  menu-navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+			  </li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!-- Add a new section for Ambulance Services below -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="learn-more-content">
+                    <h3>Learn More About Ambulance Services</h3>
+                    <p>Explore our reliable Ambulance Services that are designed to provide immediate and efficient medical transportation in times of emergencies. Our dedicated ambulance team and well-equipped vehicles ensure rapid response and safe transport to healthcare facilities.</p>
+                    <p><strong>Key Features of Our Ambulance Services</strong>:</p>
+                    <ul>
+                        <li><strong>Rapid Emergency Response:</strong> We prioritize rapid response times to ensure that patients receive prompt medical attention in emergency situations.</li>
+                        <li><strong>Qualified Medical Team:</strong> Our ambulance crew consists of qualified medical professionals who can provide initial medical care during transport.</li>
+                        <li><strong>Well-Equipped Vehicles:</strong> Our ambulances are equipped with the necessary medical equipment and supplies to ensure patient comfort and safety.</li>
+                        <li><strong>Transport to Healthcare Facilities:</strong> We provide transport to the nearest healthcare facilities, ensuring that patients receive the necessary medical care.</li>
+                    </ul>
+                    <p><strong>Benefits of Our Ambulance Services</strong>:</p>
+                    <ul>
+                        <li><strong>Timely Response:</strong> Our efficient ambulance services can be a lifesaver during critical situations, ensuring that patients receive medical care when they need it most.</li>
+                        <li><strong>Qualified Care:</strong> Our ambulance team can provide initial medical care and support during transport, contributing to better patient outcomes.</li>
+                        <li><strong>Safe Transport:</strong> We prioritize patient safety during transportation, ensuring a secure and comfortable journey to the healthcare facility.</li>
+                    </ul>
+                    <p><strong>Learn More and Request Ambulance Services</strong>: If you'd like to learn more about our Ambulance Services or request immediate assistance, please feel free to contact us. We are here to provide you with reliable emergency medical transportation.</p>
+                    <a href="{{url_for('appointment1')}}" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

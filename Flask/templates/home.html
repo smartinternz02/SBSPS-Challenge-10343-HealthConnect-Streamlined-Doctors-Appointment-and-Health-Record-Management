@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ehospital</title>
+
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    
+
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img decoding="async" src="{{ url_for('static', filename='imgs/hospital-48.png') }}" class="img-fluid" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav  menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Latest</a>
+                  </li>
+                  <li class="nav-item mt-3 mt-lg-0">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Navbar section exit -->
+
+    <!-- Banner section --> 
+    <section id="home" class="home">
+        <div class="banner_wrapper wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <h3>Caring, Healing,</h3>
+                        <h1>& Leading</h1>
+                        <p>We are here to hear and heal your health problems.Effective treatment depends on getting the right diagnosis. Our experts diagnose and treat the toughest medical challenges</p>
+                        <a href="{{url_for('appointment1')}}" class="main-btn mt-4 fill-btn">Appointment</a>
+                        <a href="{{url_for('learn')}}" class="main-btn mt-4 ms-3">Learn More</a>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
+                        <div class="top-right-sec">
+                            <div class="animate-img">
+                                <img decoding="async" class="aimg1" src="{{ url_for('static', filename='imgs/download.png') }}">
+                                <img decoding="async" class="aimg2" src="{{ url_for('static', filename='imgs/images.png') }}">
+                            </div>
+                            <img decoding="async" class="img-fluid ms-xl-5" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="{{ url_for('static', filename='imgs/appointment.png') }}">
+                            </div>
+                            <div>
+                                <h4>Easy Appointment</h4>
+                                <p>The easiest way to consult doctor to cure your problem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="{{ url_for('static', filename='imgs/emergency.png') }}">
+                            </div>
+                            <div>
+                                <h4>Emergency Service</h4>
+                                <p>We kindly had all types of services.Please click here to know here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="{{ url_for('static', filename='imgs/24-hours.png') }}">
+                            </div>
+                            <div>
+                                <h4>24/7 Service</h4>
+                                <p>The numerals stand for "24 hours a day, 7 days a week"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner section exit -->
+
+    <!-- About section --> 
+    <section id="about" class="about_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-mb-0 mb-5">
+                    <div class="position-relative">
+                        <img decoding="async" src="{{ url_for('static', filename='imgs/family1.png') }}" class="img-fluid">
+                        <img decoding="async" src="{{ url_for('static', filename='imgs/welcome-48.png') }}" class="about-animate">
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>Welcome to our Family</h2>
+                    <p>Our hospital is a healthcare institution providing patient treatment with specialized health science and auxiliary healthcare staff and medical equipment. We mainly focus on the patient's happiness.</p>
+                    <div class="mt-5 card">
+                        <div class="about-clinic">
+                            <h4>500+</h4>
+                            <p>Happy Patients</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>50+</h4>
+                            <p>Qualified Doctors</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>25+</h4>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>55+</h4>
+                            <p>Awards</p>
+                        </div>
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About section exit -->
+
+    <!-- Services section --> 
+    <section id="services" class="services_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3>Our Services</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="{{ url_for('static', filename='imgs/xray-64.png') }}">
+                        </div>
+                        <div>
+                            <h4>X-ray/Scanning </h4>
+                            <p>X-ray is a quick, painless test that produces images of the 
+                                structures inside your body particularly your bones.</p>
+                            <a href="{{url_for('xray')}}" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="{{ url_for('static', filename='imgs/laboratory-64.png') }}">
+                        </div>
+                        <div>
+                            <h4>Laboratory</h4>
+                            <p>Tests are conducted out on clinical specimens to obtain information about the
+                                 health of a patient prevention of disease.</p>
+                            <a href="{{url_for('lab')}}" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="{{ url_for('static', filename='imgs/pharmacy-64.png') }}">
+                        </div>
+                        <div>
+                            <h4>Pharmacy</h4>
+                            <p>Pharmacy, the science and art concerned with the preparation and standardization of medicines.</p>
+                            <a href="{{url_for('pharma')}}" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="{{ url_for('static', filename='imgs/ambulance-64.png') }}">
+                        </div>
+                        <div>
+                            <h4>Ambulance</h4>
+                            <p>Providing clinical interventions on the scene for seriously ill patients 
+                                and transporting to hospital in an emergency.</p>
+                            <a href="{{url_for('ambulance')}}" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="{{ url_for('static', filename='imgs/rooms-64.png') }}">
+                        </div>
+                        <div>
+                            <h4>Accommodation</h4>
+                            <p>Included in hospital cover generally includes all in-hospital services 
+                                such as meals, bed and nursing care.</p>
+                            <a href="{{url_for('acco')}}" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="{{ url_for('static', filename='imgs/out-patient-department-64.png') }}">
+                        </div>
+                        <div>
+                            <h4>Out-Patient Department</h4>
+                            <p>Cures people's health problems who visit the hospital, 
+                                but do not at this time require a bed or to be admitted for overnight care.</p>
+                            <a href="{{url_for('op')}}" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section Exit -->
+
+    <!-- Team section --> 
+    <section id="team" class="team_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Our Team</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./images/team/team1.png" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>D.C.V.Guptha</h5>
+                            <p>21471A05E7</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-google"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./images/team/team3.png" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>K.Sai Surya</h5>
+                            <p>21471A05G7</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-google"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./images/team/team2.png" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Y.Narendra</h5>
+                            <p>21471A05K9</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-google"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./images/team/team3.png" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>V.Sri Harsha</h5>
+                            <p>21471A05K7</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-google"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section Exit  -->
+
+    <!-- Gallery section --> 
+    <section id="gallery" class="gallery_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3>Our Doctors</h3>
+                </div>
+            </div>
+            <div class="row" style="display: flex;flex-wrap: nowrap;">
+                <div class="col-md-8 col-sm-6 mb-4">
+                    <img decoding="async" src="{{ url_for('static', filename='imgs/d1.jpg') }}"  class="w-50 h-70">
+                </div>
+                <div class="col-md-8 col-sm-6 mb-4">
+                    <img decoding="async" src="{{ url_for('static', filename='imgs/d3.jpg') }}" class="w-50 h-70">
+                </div>
+				<!-- <div class="col-md-8 col-sm-6 mb-4">
+                    <img decoding="async" src="{{ url_for('static', filename='imgs/d4.jpg') }}" class="w-50 h-70">
+                </div>
+				<div class="col-md-8 col-sm-6 mb-4">
+                    <img decoding="async" src="{{ url_for('static', filename='imgs/d5.jpg') }}" class="w-50 h-70">
+                </div> -->
+                <!-- <div class="col-md-8 col-sm-6 mb-4">
+                    <img decoding="async" src="d3.jpg" class="w-50 h-70">
+                </div>
+                <div class="col-md-8 col-sm-6 mb-4">
+                    <img decoding="async" src="d4.jpg" class="w-50 h-70">
+                </div>
+                <div class="col-md-8 col-sm-6 mb-4">
+                    <img decoding="async" src="d5.jpg" class="w-50 h-70">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section Exit -->
+
+    <!-- Testimonial section --> 
+    <section id="testimonial" class="testimonial_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <h3 class="text-black">Testimonials</h3>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img decoding="async" src="{{ url_for('static', filename='imgs/sundar-pichai-wallpapers.jpg') }}" class="img-fluid" >
+                        <h4 class="pt-4 mb-0">Sundar Pichai</h4>
+                        <p>CEO of GOOGLE</p> 
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-8 col-sm-6 ps-md-4 pt-sm-0 pt-4">
+                    <h4>Awesome Work</h4>
+                    <p>“They really took my individual case to heart. Their team is very helpful. They all work
+                        together in an impressive way to make sure that my needs were met and I walked out pain
+                        free.”</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Testimonial Section Exit -->
+
+    <!--Appointment section --> 
+    <section class="appointment_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+                    <h3>Request your appointment and start your smile makeover!</h3>
+                    <a href="#" class="mt-5 main-btn fill-btn">Request Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment section Exit -->
+
+    <!-- Blog section --> 
+    <section id="blog" class="blog_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Latest</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img decoding="async" src="{{ url_for('static', filename='imgs/insurance.png') }}" height="120" width="120">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Medical Insurance</h5>
+                            <h6 class="text-white">By Chandu - February 18, 2023</h6>
+                            <p class="mt-2 text-white">Covers cost of an insured individual's medical and surgical expenses
+                            </p>
+                            <a href="med" class="main-btn mt-2">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img decoding="async" src="{{ url_for('static', filename='imgs/protection.png') }}" height="120" width="120">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Employee Health Scheme</h5>
+                            <h6 class="text-white">By Harsha - May 18, 2023</h6>
+                            <p class="mt-2 text-white">Applicable to both serving and retired employees of the 
+                                state government.
+                            </p>
+                            <a href="sch" class="main-btn mt-2">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img decoding="async" src="{{ url_for('static', filename='imgs/offer.png') }}" height="120" width="120">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Discounts&Offers</h5>
+                            <h6 class="text-white">By Narendra - June 18, 2023</h6>
+                            <p class="mt-2 text-white">All the offers and discount offered by hospital,
+                                will be shown here.
+                            </p>
+                            <a href="dis" class="main-btn mt-2">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section Exit  -->
+
+    <!-- Footer section --> 
+    <section id="contact" class="footer_wrapper wrapper">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Hospital Location</h5>
+                    <p class="ps-0">Kothapet,<br> 
+                           Guntur,<br>
+                        Andhra Pradesh....</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> No. 96/101,Kothapet, Guntur</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>08647-222 3333</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>eHospitality@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Branches</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Health Card</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 mb-4"> -->
+                    <!-- <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Gift Card</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div> -->
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-dark" placeholder="Enter Your Email Here">
+                        <button type="submit" class="main-btn rounded-2 mt-3 border-black text-black">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0 ">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="container-fluid copyright-section">
+            <p class="p-0">Copyright <a href="#">© eHospitality.</a> All Rights Reserved</p>
+        </div>
+    </section>
+
+    <!-- Footer section exit -->
+
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script>
+		// Header Scroll 
+let nav = document.querySelector(".navbar");
+window.onscroll = function() {
+    if(document.documentElement.scrollTop > 100){
+        nav.classList.add("header-scrolled");
+    }else{
+        nav.classList.remove("header-scrolled");
+    }
+}
+
+// nav hide  
+let navBar = document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function(a){
+    a.addEventListener("click", function(){
+        navCollapse.classList.remove("show");
+    })
+})
+
+	</script>
+</body>
+
+</html>
+
+        
